@@ -1,0 +1,27 @@
+{
+  "book": {
+    "title": "The Lean Startup",
+    "author": "Eric Ries",
+    "identity_confidence": "high"
+  },
+  "sources": [
+    {
+      "id": "publisher",
+      "title": "Publisher or official book page",
+      "url": "https://example.com/official-book-page",
+      "source_type": "publisher",
+      "trust_level": "high",
+      "used_for": ["identity", "methodology"],
+      "notes": "Replace this placeholder with the actual verified publisher source when researching live."
+    },
+    {
+      "id": "author-interview",
+      "title": "Author interview or talk",
+      "url": "https://example.com/author-interview",
+      "source_type": "interview",
+      "trust_level": "high",
+      "used_for": ["methodology", "example"],
+      "notes": "Replace this placeholder with a verified author source."
+    }
+  ]
+}
