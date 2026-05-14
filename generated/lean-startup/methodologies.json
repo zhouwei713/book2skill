@@ -1,0 +1,135 @@
+{
+  "book": {
+    "title": "The Lean Startup",
+    "title_english": "The Lean Startup",
+    "author": "Eric Ries",
+    "publisher": "Crown Business",
+    "publication_year": "2011",
+    "edition_or_version": "Standard edition",
+    "isbn": "",
+    "identity_confidence": "high"
+  },
+  "methodologies": [
+    {
+      "skill_name": "mvp",
+      "name_en": "Minimum Viable Product",
+      "name_cn": "最小可行产品",
+      "trigger_scenario": "The user wants to test a product idea with the smallest useful experiment.",
+      "core_goal": "define the smallest product or experiment that can test the riskiest assumption",
+      "inputs": [
+        "idea",
+        "target_user",
+        "core_assumption",
+        "success_metric",
+        "constraints"
+      ],
+      "steps": [
+        {
+          "name": "Identify the riskiest assumption",
+          "instruction": "Separate the user's idea into assumptions about users, value, acquisition, payment, retention, and feasibility. Pick the assumption that can invalidate the idea fastest."
+        },
+        {
+          "name": "Define the smallest experiment",
+          "instruction": "Design the minimum product, landing page, concierge service, prototype, manual workflow, or test that can validate the assumption."
+        },
+        {
+          "name": "Set the learning metric",
+          "instruction": "Choose one clear success metric and one decision threshold before the experiment starts."
+        },
+        {
+          "name": "Decide next action",
+          "instruction": "Recommend persevere, iterate, or pivot based on the expected evidence."
+        }
+      ],
+      "expected_output": "A concise MVP experiment plan with assumption, prototype scope, metric, threshold, timeline, risk, and next action.",
+      "source_basis": "Core Lean Startup methodology commonly associated with MVP and validated learning.",
+      "evidence_sources": [
+        "source-pack:publisher",
+        "source-pack:author-interview"
+      ],
+      "confidence": "high",
+      "risk_notes": "Exact chapter references should be confirmed during live research."
+    },
+    {
+      "skill_name": "build-measure-learn",
+      "name_en": "Build Measure Learn",
+      "name_cn": "构建测量学习循环",
+      "trigger_scenario": "The user wants to run an iterative product learning cycle.",
+      "core_goal": "turn an idea into a measurable experiment and convert results into a decision",
+      "inputs": [
+        "hypothesis",
+        "build_plan",
+        "metric",
+        "data_source",
+        "decision_rule",
+        "timeline"
+      ],
+      "steps": [
+        {
+          "name": "Build",
+          "instruction": "Translate the hypothesis into the smallest build action that can generate real user evidence."
+        },
+        {
+          "name": "Measure",
+          "instruction": "Define actionable metrics, collection method, sample, and observation period."
+        },
+        {
+          "name": "Learn",
+          "instruction": "Interpret the results against the pre-set decision rule. Summarize what has been validated or invalidated."
+        },
+        {
+          "name": "Shorten the loop",
+          "instruction": "Suggest ways to reduce cost, time, and complexity in the next cycle."
+        }
+      ],
+      "expected_output": "A Build Measure Learn cycle plan and learning record.",
+      "source_basis": "Core Lean Startup feedback loop.",
+      "evidence_sources": [
+        "source-pack:publisher",
+        "source-pack:author-interview"
+      ],
+      "confidence": "high",
+      "risk_notes": "Keep metrics actionable and avoid vanity metrics."
+    },
+    {
+      "skill_name": "pivot",
+      "name_en": "Pivot",
+      "name_cn": "转型决策",
+      "trigger_scenario": "The user has product evidence and wants to decide whether to change direction.",
+      "core_goal": "diagnose whether to persevere, iterate, or make a strategic pivot",
+      "inputs": [
+        "current_strategy",
+        "experiment_results",
+        "customer_feedback",
+        "metrics",
+        "constraints"
+      ],
+      "steps": [
+        {
+          "name": "Review evidence",
+          "instruction": "Summarize what the product team has learned from users, metrics, interviews, and experiments."
+        },
+        {
+          "name": "Identify the failed assumption",
+          "instruction": "Find which assumption no longer holds, such as value, customer segment, channel, pricing, growth, or technology."
+        },
+        {
+          "name": "Select pivot type",
+          "instruction": "Recommend the most suitable shift, such as customer segment pivot, zoom-in pivot, zoom-out pivot, channel pivot, value capture pivot, or technology pivot."
+        },
+        {
+          "name": "Design the next validation",
+          "instruction": "Turn the pivot recommendation into a new testable hypothesis and experiment plan."
+        }
+      ],
+      "expected_output": "A pivot diagnosis report with evidence, failed assumption, recommended pivot, risks, and next validation experiment.",
+      "source_basis": "Lean Startup pivot and persevere decision logic.",
+      "evidence_sources": [
+        "source-pack:publisher",
+        "source-pack:author-interview"
+      ],
+      "confidence": "high",
+      "risk_notes": "Do not recommend a pivot only because growth is temporarily slow."
+    }
+  ]
+}
