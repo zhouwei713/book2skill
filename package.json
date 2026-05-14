@@ -1,0 +1,36 @@
+{
+  "name": "book2skill",
+  "version": "2.0.0",
+  "description": "A source-grounded meta skill for turning books, transcripts, article collections, and other long-form materials into reusable AI Agent Skills.",
+  "main": "SKILL.md",
+  "scripts": {
+    "validate:example": "python scripts/validate_methodologies.py examples/lean-startup/methodologies.json examples/lean-startup/source-pack.json",
+    "generate:example": "python scripts/generate_skills.py examples/lean-startup/methodologies.json generated/lean-startup",
+    "package:example": "python scripts/package_skills.py generated/lean-startup dist"
+  },
+  "keywords": [
+    "ai-skill",
+    "agent-skill",
+    "book",
+    "course",
+    "transcript",
+    "article-collection",
+    "podcast",
+    "methodology",
+    "knowledge-extraction",
+    "prompt-engineering",
+    "openclaw",
+    "claude-code"
+  ],
+  "license": "MIT",
+  "files": [
+    "SKILL.md",
+    "README.md",
+    "agents/",
+    "templates/",
+    "schemas/",
+    "prompts/",
+    "scripts/",
+    "examples/"
+  ]
+}
