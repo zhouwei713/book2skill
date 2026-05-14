@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Source Evidence Pack",
+  "type": "object",
+  "required": ["book", "sources"],
+  "properties": {
+    "book": {
+      "type": "object",
+      "required": ["title", "author"],
+      "properties": {
+        "title": {"type": "string"},
+        "author": {"type": "string"},
+        "content_type": {"type": "string"},
+        "identity_confidence": {"type": "string", "enum": ["high", "medium", "low"]}
+      }
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "title", "url", "source_type", "trust_level", "used_for"],
+        "properties": {
+          "id": {"type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"},
+          "title": {"type": "string"},
+          "url": {"type": "string"},
+          "source_type": {"type": "string", "enum": ["publisher", "author", "toc", "interview", "review", "summary", "other"]},
+          "trust_level": {"type": "string", "enum": ["high", "medium", "low"]},
+          "used_for": {"type": "array", "items": {"type": "string"}},
+          "notes": {"type": "string"}
+        }
+      }
+    }
+  }
+}
