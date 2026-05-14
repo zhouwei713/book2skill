@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Source Methodology Skill Pack",
+  "type": "object",
+  "required": ["book", "methodologies"],
+  "properties": {
+    "book": {
+      "type": "object",
+      "required": ["title", "author"],
+      "properties": {
+        "title": {"type": "string"},
+        "title_english": {"type": "string"},
+        "author": {"type": "string"},
+        "publisher": {"type": "string"},
+        "content_type": {"type": "string"},
+        "publication_year": {"type": "string"},
+        "edition_or_version": {"type": "string"},
+        "isbn": {"type": "string"},
+        "identity_confidence": {"type": "string", "enum": ["high", "medium", "low"]}
+      }
+    },
+    "methodologies": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["skill_name", "name_en", "name_cn", "trigger_scenario", "core_goal", "inputs", "steps", "expected_output", "source_basis", "confidence"],
+        "properties": {
+          "skill_name": {"type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"},
+          "name_en": {"type": "string"},
+          "name_cn": {"type": "string"},
+          "trigger_scenario": {"type": "string"},
+          "core_goal": {"type": "string"},
+          "inputs": {"type": "array", "items": {"type": "string"}},
+          "steps": {"type": "array", "minItems": 2, "items": {"type": "object", "required": ["name", "instruction"], "properties": {"name": {"type": "string"}, "instruction": {"type": "string"}}}},
+          "expected_output": {"type": "string"},
+          "source_basis": {"type": "string"},
+          "evidence_sources": {"type": "array", "items": {"type": "string"}},
+          "confidence": {"type": "string", "enum": ["high", "medium", "low"]},
+          "risk_notes": {"type": "string"},
+          "background_concepts": {"type": "array", "items": {"type": "string"}}
+        }
+      }
+    }
+  }
+}
